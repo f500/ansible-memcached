@@ -5,6 +5,14 @@
 
 - name: write memcached.conf
   template: src=memcached.conf.j2 dest=/etc/memcached.conf owner=root group=root mode=0644
+  when: memcached_servers is undefined
+  notify:
+    - restart memcached
+
+- name: write memcached_servers.conf
+  template: src=memcached_servers.conf.j2 dest=/etc/memcached_{{ item.name }}.conf owner=root group=root mode=0644
+  with_items: memcached_servers
+  when: memcached_servers is defined
   notify:
     - restart memcached
 

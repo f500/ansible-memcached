@@ -1,0 +1,13 @@
+-d
+logfile /var/log/memcached_{{ item.name }}.log
+-m {{ item.memusage }}
+-u nobody
+{% if item.listen is defined %}-l {{ item.listen }}{% endif %}
+
+{% if item.port is defined %}-p {{ item.port }}{% endif %}
+
+{% if item.maxconn is defined  %}-c {{ item.maxconn }}{% endif %}
+
+{% if item.socket is defined  %}-s {{ item.socket }}{% endif %}
+
+{% if item.socket is defined and item.permissions is defined %}-a {{ item.permissions }}{% endif %}
