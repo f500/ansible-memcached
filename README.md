@@ -1,3 +1,7 @@
+## Deprecated
+
+This package will no longer be updated. In it's current state it won't work for Debian Buster.
+
 Memcached
 ========
 
