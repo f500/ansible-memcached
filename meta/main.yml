@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: "Jasper N. Brouwer, Ramon de la Fuente"
+  role_name: memcached
   description: Install and start memcached
   company: Future500
   license: LGPL
@@ -8,7 +9,8 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-      - wheezy
+      - bullseye
+      - bookworm
   galaxy_tags:
     - database
     - database:sql

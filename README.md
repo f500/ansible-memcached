@@ -14,7 +14,7 @@ BC break: the default Listen directive is now "127.0.0.1"
 Requirements
 ------------
 
-Debian Wheezy with the package python-pycurl and python-software-properties installed.
+Debian Bullseye / Bookworm with the package python-pycurl and python-software-properties installed.
 
 Role Variables
 --------------
