@@ -6,11 +6,11 @@ memcached_port: 11211
 memcached_maxconn: 1024
 memcached_memusage: 128
 
-#memcached_socket: ~
-#memcached_permissions: ~
+# memcached_socket: ~
+# memcached_permissions: ~
 
 # When using multiple instances:
-#memcached_servers:
+# memcached_servers:
 #  - name: production
 #    maxconn: 1024
 #    memusage: 128
@@ -21,4 +21,3 @@ memcached_memusage: 128
 #    memusage: 128
 #    socket: "/var/run/memcached/memcached_development.sock"
 #    permissions: "0666"
-
