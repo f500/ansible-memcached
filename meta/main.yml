@@ -2,16 +2,16 @@
 galaxy_info:
   author: "Jasper N. Brouwer, Ramon de la Fuente"
   role_name: memcached
+  namespace: "f500"
   description: Install and start memcached
   company: Future500
   license: LGPL
-  min_ansible_version: 1.4
+  min_ansible_version: "1.4"
   platforms:
-  - name: Debian
-    versions:
-      - bullseye
-      - bookworm
+    - name: Debian
+      versions:
+        - bullseye
+        - bookworm
   galaxy_tags:
-    - database
-    - database:sql
+    - system
 dependencies: []
